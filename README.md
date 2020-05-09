@@ -25,6 +25,7 @@ Debug pre-hook with
 git commit --amend
 ````
 
+> NOTE: eventually use the `post-push` hook instead `pre-push`.
 
 
 RUN
@@ -34,8 +35,10 @@ RUN
 
 - `npm run deploy`, publish ghe pages (no commits on master appears)
 
+- `npm run start`, to test locally
 
-
+To update git-page repository you don't need to do nothing: 
+the `git-hooks` setted into `.githooks` folder will perform all the thing for you (like `npm run deploy`).
 
 
 NOTES

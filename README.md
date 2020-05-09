@@ -19,14 +19,20 @@ git config --local core.hooksPath .githooks/
 ````
 See [here](https://www.viget.com/articles/two-ways-to-share-git-hooks-with-your-team/).
 
+Debug pre-hook with 
+
+````
+git commit --amend
+````
+
 
 
 RUN
 ---
 
-- `predeploy`, creates only the assets without publishing
+- `npm run predeploy`, creates only the assets without publishing
 
-- `deploy`, publish ghe pages (no commits on master appears)
+- `npm run deploy`, publish ghe pages (no commits on master appears)
 
 
 
